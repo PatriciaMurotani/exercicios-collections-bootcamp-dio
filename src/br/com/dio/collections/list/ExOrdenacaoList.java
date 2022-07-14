@@ -46,9 +46,6 @@ public class ExOrdenacaoList {
         System.out.println(meusGatos);
     }
 }
-
-
-
 class Gato implements Comparable<Gato> {
     private String nome;
     private Integer idade;

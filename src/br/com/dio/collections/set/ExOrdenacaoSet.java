@@ -36,7 +36,6 @@ public class ExOrdenacaoSet {
         Set<Serie> minhasSeries3 = new TreeSet<>(new ComparatorNomeGeneroTempoEpisodio());
         minhasSeries3.addAll(minhasSeries);
         for (Serie serie : minhasSeries3) System.out.println(serie.getNome() + " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
-
     }
 }
 
@@ -92,7 +91,6 @@ class Serie implements Comparable<Serie> {
         if(tempoEpisodio != 0) return tempoEpisodio;
 
         return this.getGenero().compareTo(serie.getGenero());
-
     }
 }
 
@@ -107,6 +105,5 @@ class ComparatorNomeGeneroTempoEpisodio implements Comparator<Serie>{
         if(genero != 0) return genero;
 
         return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
-
     }
 }
