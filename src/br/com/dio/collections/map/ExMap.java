@@ -98,7 +98,7 @@ public class ExMap {
         carrosPopulares.clear();
 
         System.out.println("Confira se o dicionário está vazio: " + carrosPopulares.isEmpty());
-        
+
 
     }
 }
