@@ -80,5 +80,25 @@ public class ExMap {
         }
         System.out.println(carrosPopulares);
 
+        System.out.println("Exiba todos os carros na ordem em que foram informados: ");
+        Map<String, Double> carrosPopulares1 = new LinkedHashMap<>() {{
+            put("gol", 14.4);
+            put("uno", 15.6);
+            put("mobi", 16.1);
+            put("hb20", 14.5);
+            put("kwid", 15.6);
+        }};
+        System.out.println(carrosPopulares1.toString());
+
+        System.out.println("Exiba o dicionários ordenado pelo modelo: ");
+        Map<String, Double> carrosPopulares2 = new TreeMap<>(carrosPopulares1);
+        System.out.println(carrosPopulares2.toString());
+
+        System.out.println("Apague o dicionário de carros: ");
+        carrosPopulares.clear();
+
+        System.out.println("Confira se o dicionário está vazio: " + carrosPopulares.isEmpty());
+        
+
     }
 }
