@@ -60,6 +60,6 @@ public class ExSet {
 
         System.out.println("Confira se o conjunto 2 está vazio " + notas2.isEmpty());
 
-        System.out.println("Confira se o conjunto 3 está vazio " + notas3.isEmpty();
+        System.out.println("Confira se o conjunto 3 está vazio " + notas3.isEmpty());
     }
 }
